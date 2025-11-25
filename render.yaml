@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: avianca-backend-mock
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn wsgi:app --bind 0.0.0.0:$PORT"
+    plan: free
