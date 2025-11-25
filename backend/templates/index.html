@@ -1,0 +1,59 @@
+<!-- ============================ -->
+<!-- index.html -->
+<!-- ============================ -->
+<!-- Archivo: templates/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Avianca Connect - Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+
+
+<style>
+body {
+background: #f8f9fa;
+font-family: 'Segoe UI', sans-serif;
+}
+.navbar-brand {
+font-weight: bold;
+letter-spacing: 1px;
+}
+.card-custom {
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.btn-avianca {
+background: #d22630;
+color: white;
+font-weight: bold;
+border-radius: 10px;
+}
+.btn-avianca:hover {
+background: #b01e27;
+color: #fff;
+}
+</style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-light bg-white px-4 py-3 shadow-sm">
+<a class="navbar-brand text-danger" href="#">
+✈️ Avianca Connect
+</a>
+</nav>
+
+
+<div class="container mt-5">
+<div class="row justify-content-center">
+
+
+<div class="col-md-8">
+<div class="card card-custom p-4 mb-4">
+<h3 class="text-danger">Estado del servicio</h3>
+<pre class="bg-light p-3 rounded">{{ status | tojson(indent=2) }}</pre>
+</div>
+</html>
