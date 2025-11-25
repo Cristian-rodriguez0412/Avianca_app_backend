@@ -1,6 +1,0 @@
-avianca_frontend_python/
-│── app.py
-│── requirements.txt
-│── templates/
-│     ├── index.html
-│     └── flights.html
