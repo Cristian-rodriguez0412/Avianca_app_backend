@@ -13,7 +13,7 @@ How to run locally:
 For Render:
 -----------
 - The included render.yaml instructs Render to install dependencies and run gunicorn wsgi:app.
-- If you prefer, set the startCommand: "gunicorn wsgi:app ..bind 0.0.0.0.:$PORT"
+- If you prefer, set the startCommand: "gunicorn wsgi:app --bind 0.0.0.0.:$PORT"
 
 
 Endpoints implemented (mock):
