@@ -6,7 +6,7 @@ import random
 import uuid
 import os
 
-app = Flask(app.py)
+app = Flask(__name__)
 CORS(app)
 
 # MAPEO CIUDADES → IATA
