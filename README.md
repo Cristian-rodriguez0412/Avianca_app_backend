@@ -12,8 +12,8 @@ How to run locally:
 
 For Render:
 -----------
-- The included render.yaml instructs Render to install dependencies and run `gunicorn backend.app:app`.
-- If you prefer, set the startCommand: "gunicorn main:app --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT"
+- The included render.yaml instructs Render to install dependencies and run gunicorn wsgi:app.
+- If you prefer, set the startCommand: "gunicorn wsgi:app ..bind 0.0.0.0.:$PORT"
 
 
 Endpoints implemented (mock):
